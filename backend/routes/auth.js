@@ -106,8 +106,6 @@ router.get("/getUserData",fetchUserData,async (req,res)=>{
       }
 });
 
-
-
 router.post("/signupAdmin",[
     body("name","Name must be atleast 5 characters").isLength({min:5}),
     body("email","Enter a valid email").isEmail(),
