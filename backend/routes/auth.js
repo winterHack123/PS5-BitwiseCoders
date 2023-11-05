@@ -42,6 +42,8 @@ router.post("/signup",[
             rollno:req.body.rollno,
             img:req.body.img
         });
+
+        console.log('gjkbjk');
         
         const data = {
             user:{
