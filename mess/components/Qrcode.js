@@ -20,7 +20,8 @@ const QrCode = () => {
         onChangeText={(value) => setText(value)}
       /> */}
       <Text></Text>
-      <Button title="Generate QR Code" onPress={generateQRCode} />
+      {!qrCodeData && <Button title="Generate QR Code" onPress={generateQRCode} />}
+      {/* <Button title="Generate QR Code" onPress={generateQRCode} /> */}
       {qrCodeData ? (
         <QRCode
           value={qrCodeData}
