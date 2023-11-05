@@ -89,6 +89,8 @@ const Login = ({navigation}) => {
             <Button onPress={()=>{navigation.navigate('Qrscan')}} title='Qrscan'/>
             <View style={{margin:7}}></View>
             <Button onPress={()=>{navigation.navigate('Qrcode')}} title='Qrcode'/>
+            <View style={{margin:7}}></View>
+            <Button onPress={()=>{navigation.navigate('Menu')}} title='Menu'/>
         </View>
         <Text className="mb-4" >Don't have an account? <Text onPress={()=>navigation.navigate('Signup')}>Sign up</Text></Text>
       <StatusBar style='auto'/>

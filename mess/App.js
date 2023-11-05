@@ -3,6 +3,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Qrscan from "./components/Qrscan";
 import Qrcode from "./components/Qrcode";
+import Menu from "./components/Menu";
 import Home from "./components/Home";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -22,6 +23,7 @@ export default function App() {
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="Qrscan" component={Qrscan} />
         <Stack.Screen name="Qrcode" component={Qrcode} />
+        <Stack.Screen name="Menu" component={Menu} />
       </Stack.Navigator>
     </NavigationContainer>
     </>
