@@ -5,6 +5,7 @@ import { BarCodeScanner } from 'expo-barcode-scanner';
 const Qrscan = ({navigation}) => {
   const [hasPermission, setHasPermission] = useState(null);
   const [scanned, setScanned] = useState(false);
+  let rollNumber;
 
   useEffect(() => {
     const getBarCodeScannerPermissions = async () => {
@@ -17,6 +18,7 @@ const Qrscan = ({navigation}) => {
 
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
+    rollNumber=data;
     alert(`Bar code with type ${type} and data ${data} has been scanned!`);
   };
 
